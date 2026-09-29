@@ -20,9 +20,9 @@ sEMG feature → Encoder → Gaussian latent z → Gesture prediction
 Supervision target: Gesture / Subject / Joint
 ```
 
-![Gesture 성능과 subject-verification 접근성의 seed-0 trade-off](figures/figure_1_f1_vs_subject_auc.png)
+![Stochastic Bottleneck과 LDA의 Macro-F1 기준선을 함께 표시한 trade-off figure](figures/figure_1_f1_vs_subject_auc_lda_reference.png)
 
-*Seed-0 beta sweep의 기존 그림입니다. Subject AUC는 특정 verification probe의 접근성 지표이며, subject 정보 제거를 뜻하지 않습니다.*
+*논문 Figure 1에서 추출한 seed-0, 8-D posterior-mean 결과입니다. 수평 점선은 LDA Macro-F1=0.582 기준이고, 수직 점선은 LDA subject-verification AUC=0.845입니다. LDA는 KL 제약이 없어 같은 KL budget 비교는 아닙니다. Subject AUC는 특정 verification probe의 접근성 지표이며, subject 정보 제거를 뜻하지 않습니다.*
 
 ## Key Finding / Result
 
